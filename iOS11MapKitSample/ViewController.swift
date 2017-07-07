@@ -30,6 +30,7 @@ extension ViewController {
         let annotation = MKPointAnnotation()
         annotation.coordinate = CLLocationCoordinate2D(latitude: 35.65858, longitude: 139.745433)
         annotation.title = "東京タワー"
+        annotation.subtitle = "Tokyo Tower" // マーカーを選択すると表示される
         mapView.addAnnotation(annotation)
     }
 }

@@ -39,6 +39,26 @@
                                             <segue destination="BYZ-38-t0r" kind="show" id="aar-PI-Ckc"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="xPA-wX-Ckq" style="IBUITableViewCellStyleDefault" id="Hdg-zh-2ki">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hdg-zh-2ki" id="Jc1-wy-drq">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="New Map Controls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xPA-wX-Ckq">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Zg1-9b-uxJ" kind="show" id="99c-HY-hkE"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -116,6 +136,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OiT-CV-rzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1014" y="134"/>
+        </scene>
+        <!--Map Controls View Controller-->
+        <scene sceneID="ZbJ-kb-P6a">
+            <objects>
+                <viewController id="Zg1-9b-uxJ" customClass="MapControlsViewController" customModule="iOS11MapKitSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QNc-ZI-VST"/>
+                        <viewControllerLayoutGuide type="bottom" id="zT2-Yb-eEo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="exb-Xn-NS3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uLu-Ef-FRM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqZ-mv-HNA">
+                                <rect key="frame" x="16" y="64" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="19Y-GR-itm"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zT2-Yb-eEo" firstAttribute="top" secondItem="uLu-Ef-FRM" secondAttribute="bottom" id="8nQ-1X-avL"/>
+                            <constraint firstItem="uLu-Ef-FRM" firstAttribute="top" secondItem="exb-Xn-NS3" secondAttribute="top" id="HVq-rL-HNB"/>
+                            <constraint firstAttribute="trailing" secondItem="xqZ-mv-HNA" secondAttribute="trailing" constant="16" id="NVJ-3X-qCZ"/>
+                            <constraint firstItem="uLu-Ef-FRM" firstAttribute="leading" secondItem="exb-Xn-NS3" secondAttribute="leading" id="PrK-pP-7Gm"/>
+                            <constraint firstItem="xqZ-mv-HNA" firstAttribute="top" secondItem="QNc-ZI-VST" secondAttribute="bottom" id="T8j-TB-SGM"/>
+                            <constraint firstAttribute="trailing" secondItem="uLu-Ef-FRM" secondAttribute="trailing" id="bhx-ee-oNx"/>
+                            <constraint firstItem="xqZ-mv-HNA" firstAttribute="leading" secondItem="exb-Xn-NS3" secondAttribute="leading" constant="16" id="xay-Vm-gzX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fXV-Bj-ssM">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="uLu-Ef-FRM" id="go7-UK-4VX"/>
+                        <outlet property="stackView" destination="xqZ-mv-HNA" id="brK-rh-hbS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bz5-58-Va8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="830"/>
         </scene>
     </scenes>
 </document>

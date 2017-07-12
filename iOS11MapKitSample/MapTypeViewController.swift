@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class MapTypeViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
@@ -17,10 +17,16 @@ class ViewController: UIViewController {
         
         prepare()
     }
+    
+    @IBAction func segmentedControlDidChange(_ sender: UISegmentedControl) {
+        mapView.mapType = sender.selectedSegmentIndex == 0 ? .mutedStandard : .standard
+    }
 }
 
-extension ViewController {
+extension MapTypeViewController {
     func prepare() {
+        mapView.mapType = .mutedStandard
+        
         var region = mapView.region
         region.span.latitudeDelta = 0.02
         region.span.longitudeDelta = 0.02

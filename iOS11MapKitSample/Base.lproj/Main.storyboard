@@ -59,6 +59,26 @@
                                             <segue destination="Zg1-9b-uxJ" kind="show" id="99c-HY-hkE"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="B4q-TH-ujo" style="IBUITableViewCellStyleDefault" id="x52-zD-9UB">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x52-zD-9UB" id="9Nk-PU-8Jt">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Marker Annotation View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B4q-TH-ujo">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="2az-k8-Bgj" kind="show" id="f5b-kB-XSh"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -180,7 +200,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bz5-58-Va8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="830"/>
+            <point key="canvasLocation" x="476" y="922"/>
+        </scene>
+        <!--Marker Annotation View View Controller-->
+        <scene sceneID="dxZ-Ad-Pmq">
+            <objects>
+                <viewController id="2az-k8-Bgj" customClass="MarkerAnnotationViewViewController" customModule="iOS11MapKitSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p8w-1Q-Fxd"/>
+                        <viewControllerLayoutGuide type="bottom" id="ugt-EN-I7a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nND-uD-DQU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RTu-Es-zZc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RTu-Es-zZc" secondAttribute="trailing" id="ENc-7Y-jKg"/>
+                            <constraint firstItem="ugt-EN-I7a" firstAttribute="top" secondItem="RTu-Es-zZc" secondAttribute="bottom" id="Tbp-mv-Hws"/>
+                            <constraint firstItem="RTu-Es-zZc" firstAttribute="leading" secondItem="nND-uD-DQU" secondAttribute="leading" id="W09-us-4Oh"/>
+                            <constraint firstItem="RTu-Es-zZc" firstAttribute="top" secondItem="nND-uD-DQU" secondAttribute="top" id="wX6-FV-6yJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ePB-Nz-JvP">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="RTu-Es-zZc" id="iuT-KM-YRr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1U-Xa-vCb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-263" y="922"/>
         </scene>
     </scenes>
 </document>

@@ -99,6 +99,26 @@
                                             <segue destination="7SD-Fl-NNJ" kind="show" id="0s5-dC-Wkq"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="p1N-a4-IPM" style="IBUITableViewCellStyleDefault" id="NeH-gb-KOe">
+                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NeH-gb-KOe" id="aQg-Co-ynt">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Annotation Clustering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p1N-a4-IPM">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="AIR-cZ-SUI" kind="show" id="Hf4-zd-awZ"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -291,6 +311,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8gZ-Uv-MtI" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="822" y="834"/>
+        </scene>
+        <!--Annotation Clustering View Controller-->
+        <scene sceneID="ExO-0N-TmJ">
+            <objects>
+                <viewController id="AIR-cZ-SUI" customClass="AnnotationClusteringViewController" customModule="iOS11MapKitSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vzx-7Y-7Gd"/>
+                        <viewControllerLayoutGuide type="bottom" id="TaK-PZ-T88"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uzG-fE-3uA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ky0-Bo-Dbh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ky0-Bo-Dbh" secondAttribute="trailing" id="AFl-Rn-WTE"/>
+                            <constraint firstItem="TaK-PZ-T88" firstAttribute="top" secondItem="Ky0-Bo-Dbh" secondAttribute="bottom" id="Tgu-ny-t1K"/>
+                            <constraint firstItem="Ky0-Bo-Dbh" firstAttribute="leading" secondItem="uzG-fE-3uA" secondAttribute="leading" id="WOM-A8-snP"/>
+                            <constraint firstItem="Ky0-Bo-Dbh" firstAttribute="top" secondItem="uzG-fE-3uA" secondAttribute="top" id="our-2h-VDc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Orp-lm-S8U">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="Ky0-Bo-Dbh" id="37M-et-9M4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbp-Fj-2r8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="822" y="1554"/>
         </scene>
     </scenes>
 </document>

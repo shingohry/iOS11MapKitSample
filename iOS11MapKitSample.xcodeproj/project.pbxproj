@@ -13,6 +13,8 @@
 		C98228831F0F185C00F7937D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98228811F0F185C00F7937D /* Main.storyboard */; };
 		C98228851F0F185C00F7937D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98228841F0F185C00F7937D /* Assets.xcassets */; };
 		C98228881F0F185C00F7937D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98228861F0F185C00F7937D /* LaunchScreen.storyboard */; };
+		C9A7321D1F1B9B2C00C4E0E3 /* AnnotationDisplayPriorityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7321C1F1B9B2C00C4E0E3 /* AnnotationDisplayPriorityViewController.swift */; };
+		C9A7321F1F1BA0CB00C4E0E3 /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = C9A7321E1F1BA0CB00C4E0E3 /* stations.json */; };
 		C9CA05871F16701800F24508 /* MapControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA05861F16701800F24508 /* MapControlsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		C98228841F0F185C00F7937D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C98228871F0F185C00F7937D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C98228891F0F185C00F7937D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9A7321C1F1B9B2C00C4E0E3 /* AnnotationDisplayPriorityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationDisplayPriorityViewController.swift; sourceTree = "<group>"; };
+		C9A7321E1F1BA0CB00C4E0E3 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = stations.json; path = ../../../../Desktop/tmp20170716_2224/stations.json; sourceTree = "<group>"; };
 		C9CA05861F16701800F24508 /* MapControlsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapControlsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,10 +66,12 @@
 				C982287F1F0F185C00F7937D /* MapTypeViewController.swift */,
 				C9CA05861F16701800F24508 /* MapControlsViewController.swift */,
 				C91A10F81F184BD400FE801F /* MarkerAnnotationViewViewController.swift */,
+				C9A7321C1F1B9B2C00C4E0E3 /* AnnotationDisplayPriorityViewController.swift */,
 				C98228811F0F185C00F7937D /* Main.storyboard */,
 				C98228841F0F185C00F7937D /* Assets.xcassets */,
 				C98228861F0F185C00F7937D /* LaunchScreen.storyboard */,
 				C98228891F0F185C00F7937D /* Info.plist */,
+				C9A7321E1F1BA0CB00C4E0E3 /* stations.json */,
 			);
 			path = iOS11MapKitSample;
 			sourceTree = "<group>";
@@ -130,6 +136,7 @@
 			files = (
 				C98228881F0F185C00F7937D /* LaunchScreen.storyboard in Resources */,
 				C98228851F0F185C00F7937D /* Assets.xcassets in Resources */,
+				C9A7321F1F1BA0CB00C4E0E3 /* stations.json in Resources */,
 				C98228831F0F185C00F7937D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +150,7 @@
 			files = (
 				C98228801F0F185C00F7937D /* MapTypeViewController.swift in Sources */,
 				C9CA05871F16701800F24508 /* MapControlsViewController.swift in Sources */,
+				C9A7321D1F1B9B2C00C4E0E3 /* AnnotationDisplayPriorityViewController.swift in Sources */,
 				C91A10F91F184BD400FE801F /* MarkerAnnotationViewViewController.swift in Sources */,
 				C982287E1F0F185C00F7937D /* AppDelegate.swift in Sources */,
 			);

@@ -1,0 +1,51 @@
+[{
+    "title": "秋葉原",
+    "latitude": "35.698339",
+    "longitude": "139.772908",
+    "priority": 0
+}, {
+    "title": "神田",
+    "latitude": "35.692188",
+    "longitude": "139.771041",
+    "priority": 1
+}, {
+    "title": "岩本町",
+    "latitude": "35.695551",
+    "longitude": "139.775139",
+    "priority": 2
+}, {
+    "title": "小川町",
+    "latitude": "35.69515 ",
+    "longitude": "139.766835",
+    "priority": 2
+}, {
+    "title": "御茶ノ水",
+    "latitude": "35.699524",
+    "longitude": "139.765161",
+    "priority": 1
+}, {
+    "title": "浅草橋",
+    "latitude": "35.697442",
+    "longitude": "139.784323",
+    "priority": 1
+}, {
+    "title": "馬喰町",
+    "latitude": "35.693373",
+    "longitude": "139.782424",
+    "priority": 1
+}, {
+    "title": "小伝馬町",
+    "latitude": "35.690759",
+    "longitude": "139.778476",
+    "priority": 2
+}, {
+    "title": "末広町",
+    "latitude": "35.702504",
+    "longitude": "139.771652",
+    "priority": 2
+}, {
+    "title": "御徒町",
+    "latitude": "35.707278",
+    "longitude": "139.774807",
+    "priority": 1
+}]

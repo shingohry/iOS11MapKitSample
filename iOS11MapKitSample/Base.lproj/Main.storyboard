@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xq8-Zy-4oo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xq8-Zy-4oo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -79,6 +79,26 @@
                                             <segue destination="2az-k8-Bgj" kind="show" id="f5b-kB-XSh"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Qbc-lh-ERB" style="IBUITableViewCellStyleDefault" id="wtU-mv-LhR">
+                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wtU-mv-LhR" id="Rpr-fk-gyq">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Annotation Display Priority" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qbc-lh-ERB">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="7SD-Fl-NNJ" kind="show" id="0s5-dC-Wkq"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -137,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="134"/>
+            <point key="canvasLocation" x="822" y="-1263"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AgE-r5-C5U">
@@ -200,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bz5-58-Va8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="922"/>
+            <point key="canvasLocation" x="822" y="-561"/>
         </scene>
         <!--Marker Annotation View View Controller-->
         <scene sceneID="dxZ-Ad-Pmq">
@@ -235,7 +255,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1U-Xa-vCb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-263" y="922"/>
+            <point key="canvasLocation" x="822" y="134"/>
+        </scene>
+        <!--Annotation Display Priority View Controller-->
+        <scene sceneID="iNa-Bm-GJZ">
+            <objects>
+                <viewController id="7SD-Fl-NNJ" customClass="AnnotationDisplayPriorityViewController" customModule="iOS11MapKitSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V1l-Bg-068"/>
+                        <viewControllerLayoutGuide type="bottom" id="GMu-lj-9am"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gZg-jW-60L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UcS-LG-UG8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UcS-LG-UG8" firstAttribute="leading" secondItem="gZg-jW-60L" secondAttribute="leading" id="4nu-HQ-ytt"/>
+                            <constraint firstItem="GMu-lj-9am" firstAttribute="top" secondItem="UcS-LG-UG8" secondAttribute="bottom" id="8q6-oR-AJT"/>
+                            <constraint firstItem="UcS-LG-UG8" firstAttribute="top" secondItem="gZg-jW-60L" secondAttribute="top" id="IiH-OJ-zIc"/>
+                            <constraint firstAttribute="trailing" secondItem="UcS-LG-UG8" secondAttribute="trailing" id="NAl-6J-JVb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5C4-8N-SPB">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="UcS-LG-UG8" id="zb1-M4-VSC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gZ-Uv-MtI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="822" y="834"/>
         </scene>
     </scenes>
 </document>

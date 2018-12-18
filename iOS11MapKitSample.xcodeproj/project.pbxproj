@@ -30,7 +30,7 @@
 		C98228871F0F185C00F7937D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C98228891F0F185C00F7937D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9A7321C1F1B9B2C00C4E0E3 /* AnnotationDisplayPriorityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationDisplayPriorityViewController.swift; sourceTree = "<group>"; };
-		C9A7321E1F1BA0CB00C4E0E3 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = stations.json; path = ../../../../Desktop/tmp20170716_2224/stations.json; sourceTree = "<group>"; };
+		C9A7321E1F1BA0CB00C4E0E3 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
 		C9A732201F1BBACB00C4E0E3 /* AnnotationClusteringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationClusteringViewController.swift; sourceTree = "<group>"; };
 		C9A732221F1BBD0E00C4E0E3 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		C9CA05861F16701800F24508 /* MapControlsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapControlsViewController.swift; sourceTree = "<group>"; };

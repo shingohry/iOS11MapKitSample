@@ -8,5 +8,5 @@ Provide the following demo of iOS 11 MapKit new features
 - Annotation Clustering
 
 ## development environment
-- macOS Sierra 10.12.5
-- Xcode Version 9.0 beta 3 (9M174d)
+- macOS Mojave 10.14
+- Xcode Version 9.4.1 (9F2000)
